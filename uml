@@ -1,0 +1,18 @@
+@startuml
+Class Librarian{
+bookList: list[str]
+--
+updateList(newBookList: list[str)
+search(bookName: str)
+}
+
+Class User{
+bookList: list[str]
+--
+borrow(bookName:str)
+returns(bookName: str)
+}
+
+
+Librarian "1"--*"1" User
+@enduml
